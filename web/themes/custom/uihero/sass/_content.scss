@@ -1,0 +1,99 @@
+
+// Home page carousel
+.cwrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cimage {
+  margin-right: 8rem;
+}
+
+.cbody {
+  padding-top: 5rem;
+}
+
+.ctitle {
+  a {
+    color: $color-text-light;
+
+    &:hover {
+      color: $color-text-light;
+    }
+  }
+}
+
+.slick-carousel {
+  overflow: hidden;
+
+  &.slick-dotted {
+    margin-bottom: 0 !important; //used important to override slick css.
+    padding-bottom: 30px;
+  }
+
+  .slick-list {
+    margin: 0 auto;
+    max-width: calc(100vw - 30rem);
+  }
+
+  .slick-prev {
+    left: 3rem;
+
+    &::before {
+      @extend %none;
+    }
+
+    &::after {
+      background: url('../images/left.svg') 0 0 no-repeat;
+      background-size: 100%;
+      border: 1px solid $color-text-light;
+      content: '';
+      display: block;
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  .slick-next {
+    right: 6rem;
+
+    &::before {
+      @extend %none;
+    }
+
+    &::after {
+      background: url('../images/right.svg') 0 0 no-repeat;
+      background-size: 100%;
+      border: 1px solid $color-text-light;
+      content: '';
+      display: block;
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  .slick-disabled {
+    opacity: .5;
+  }
+
+  .slick-dots {
+    bottom: 15px;
+
+    button {
+      background-color: $dots;
+      border-radius: 50%;
+      height: 1rem;
+      width: 1rem;
+
+      &::before {
+        @extend %none;
+      }
+    }
+
+    .slick-active {
+      button {
+        background-color: $dots-active;
+      }
+    }
+  }
+}

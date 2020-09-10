@@ -1,0 +1,27 @@
+uuid: 393f7323-8657-4bf0-9663-bfc18cc34cb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - material_cascade
+_core:
+  default_config_hash: 9MZ9mCoPrHL5pMD2j10fZ2bEwcaBkNrDzyrblFeKxb8
+id: material_cascade_tools
+theme: material_cascade
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

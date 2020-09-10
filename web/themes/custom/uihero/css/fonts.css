@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/gothambookregular.otf);
+  /* For IE6-8 */
+  src: local("Material Icons"); }
+
+/*# sourceMappingURL=../css/fonts.css.map */

@@ -1,0 +1,22 @@
+uuid: 36e9b990-318b-4607-9d45-f179efd5e00a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uihero
+_core:
+  default_config_hash: dQ5bau5-tG85716l6Jgf_tOPJu3qrPgCOQ2nsh_e3pk
+id: uihero_breadcrumbs
+theme: uihero
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

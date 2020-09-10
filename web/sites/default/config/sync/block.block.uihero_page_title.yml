@@ -1,0 +1,20 @@
+uuid: a7af4f75-8800-4691-ad5a-f16bac47d205
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uihero
+_core:
+  default_config_hash: bEaDU5wPBIt0gHQt9b85sz5zIfX-tsfFZz57CmB1wSQ
+id: uihero_page_title
+theme: uihero
+region: content
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,28 @@
+{
+  "name": "project_name",
+  "version": "1.0.0",
+  "description": "Drupal theme.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp"
+  },
+  "author": "iamdroid",
+  "license": "ISC",
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-browser-compat": "^1.0.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}

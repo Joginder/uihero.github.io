@@ -1,0 +1,22 @@
+uuid: 40ee5fd9-33ad-43b2-8ae1-41f3dc8c90b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - uihero
+_core:
+  default_config_hash: 8MYnGrps3M-_gpVo2ezC6j4hNrzupxeZo-WCxxjrk0A
+id: uihero_help
+theme: uihero
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

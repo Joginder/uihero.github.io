@@ -1,0 +1,22 @@
+uuid: 73b24117-3e50-48a2-a4a0-bc2351b3e216
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uihero
+_core:
+  default_config_hash: vYMIGQLKn_QXG0SkeHNsnbO6Gpc0YyZX67Sl-FliVD4
+id: uihero_local_tasks
+theme: uihero
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

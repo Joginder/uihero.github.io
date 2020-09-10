@@ -1,0 +1,22 @@
+uuid: 91303025-bc57-488b-9777-fe9ec8446ff9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - material_cascade
+_core:
+  default_config_hash: fmhTtJuPQCIolH4eUH6WyY9ksabuNqdk5HnREEMAOJ0
+id: material_cascade_local_tasks
+theme: material_cascade
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: f34821a0-05a4-4eec-9b60-eaa0c016d6dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uihero
+_core:
+  default_config_hash: ZUjjqrJ2SwRnseV-SQlwbYZ93gn2TB5ain611WgI1rw
+id: uihero_content
+theme: uihero
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

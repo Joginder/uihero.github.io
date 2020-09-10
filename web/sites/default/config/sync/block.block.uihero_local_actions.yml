@@ -1,0 +1,20 @@
+uuid: df370bb4-0ff6-4ead-86c5-3fe8bcd90c3f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - uihero
+_core:
+  default_config_hash: xr9AXkjinIc3PxHpy1ZtgoJdIA3tW93ECWbctdHSpts
+id: uihero_local_actions
+theme: uihero
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

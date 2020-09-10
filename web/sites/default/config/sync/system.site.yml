@@ -1,0 +1,14 @@
+uuid: 5d2a6b57-db1b-4728-8b6c-0cbb3c249f1d
+name: Uihero
+mail: joginderpc@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

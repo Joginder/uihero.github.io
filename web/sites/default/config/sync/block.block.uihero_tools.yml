@@ -1,0 +1,27 @@
+uuid: 4d2db5f9-8f25-4001-a771-0f0d7891b5e9
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - uihero
+_core:
+  default_config_hash: xaiE4g866hNg4tPWWHxh0wyac8XKAWXiNPpBdefs5v8
+id: uihero_tools
+theme: uihero
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

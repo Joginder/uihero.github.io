@@ -1,0 +1,170 @@
+/* break points */
+.region-navbar {
+  margin: 0 auto;
+  max-width: 1500px; }
+
+.search-block-form .form-actions, .slick-carousel .slick-prev::before, .slick-carousel .slick-next::before, .slick-carousel .slick-dots button::before {
+  display: none; }
+
+/* mixins and functions */
+body,
+h1 {
+  font-family: "Gotham", sans-serif;
+  font-weight: 300; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+#navbar {
+  background-color: rgba(50, 58, 69, 0.97);
+  height: auto; }
+
+.region-navbar {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between; }
+  .region-navbar nav {
+    align-self: center;
+    margin-right: 40px; }
+    .region-navbar nav .menu {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: flex-start;
+      list-style: none; }
+  .region-navbar .menu-item {
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin: 0 15px;
+    text-transform: uppercase; }
+    .region-navbar .menu-item a {
+      padding: 6px 15px;
+      color: #FFF;
+      position: relative;
+      transition: all .3s;
+      z-index: 1; }
+      .region-navbar .menu-item a.is-active, .region-navbar .menu-item a:hover {
+        color: #FFF; }
+        .region-navbar .menu-item a.is-active:after, .region-navbar .menu-item a:hover:after {
+          border-radius: 30px;
+          opacity: 1;
+          visibility: visible;
+          height: 100%; }
+      .region-navbar .menu-item a:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        content: '.';
+        color: transparent;
+        background: #ff4b5a;
+        visibility: none;
+        opacity: 0;
+        z-index: -1; }
+  .region-navbar .navbar-logo img,
+  .region-navbar .navbar-logo a {
+    height: auto; }
+
+#header {
+  background-color: rgba(50, 58, 69, 0.97);
+  margin-top: 0;
+  padding-top: 0; }
+
+.search-block-form {
+  margin-top: .8rem;
+  width: 10rem; }
+  .search-block-form .form-type-search {
+    display: flex; }
+    .search-block-form .form-type-search::before {
+      order: 3;
+      line-height: 1.5;
+      position: absolute;
+      right: 0; }
+    .search-block-form .form-type-search.open input[type='search'] {
+      width: 100%; }
+    .search-block-form .form-type-search.open::before {
+      background: url("../images/close.svg") 0 0 no-repeat;
+      content: '';
+      display: block;
+      height: 20px;
+      width: 20px;
+      top: 26px; }
+  .search-block-form input[type='search'] {
+    color: #FFF;
+    width: 0;
+    transition: all .5s; }
+    .search-block-form input[type='search']:-ms-input-placeholder {
+      color: #FFF !important; }
+    .search-block-form input[type='search']::placeholder {
+      color: #FFF !important; }
+  .search-block-form label {
+    clip: unset;
+    cursor: pointer;
+    font-size: 0;
+    height: 20px;
+    order: 2;
+    right: 15px;
+    top: 25px;
+    visibility: visible;
+    width: 20px; }
+
+.cwrapper {
+  display: flex;
+  justify-content: center; }
+
+.cimage {
+  margin-right: 8rem; }
+
+.cbody {
+  padding-top: 5rem; }
+
+.ctitle a {
+  color: #FFF; }
+  .ctitle a:hover {
+    color: #FFF; }
+
+.slick-carousel {
+  overflow: hidden; }
+  .slick-carousel.slick-dotted {
+    margin-bottom: 0 !important;
+    padding-bottom: 30px; }
+  .slick-carousel .slick-list {
+    margin: 0 auto;
+    max-width: calc(100vw - 30rem); }
+  .slick-carousel .slick-prev {
+    left: 3rem; }
+    .slick-carousel .slick-prev::after {
+      background: url("../images/left.svg") 0 0 no-repeat;
+      background-size: 100%;
+      border: 1px solid #FFF;
+      content: '';
+      display: block;
+      height: 4rem;
+      width: 4rem; }
+  .slick-carousel .slick-next {
+    right: 6rem; }
+    .slick-carousel .slick-next::after {
+      background: url("../images/right.svg") 0 0 no-repeat;
+      background-size: 100%;
+      border: 1px solid #FFF;
+      content: '';
+      display: block;
+      height: 4rem;
+      width: 4rem; }
+  .slick-carousel .slick-disabled {
+    opacity: .5; }
+  .slick-carousel .slick-dots {
+    bottom: 15px; }
+    .slick-carousel .slick-dots button {
+      background-color: #23282f;
+      border-radius: 50%;
+      height: 1rem;
+      width: 1rem; }
+    .slick-carousel .slick-dots .slick-active button {
+      background-color: #6d7d92; }
+
+/*# sourceMappingURL=../css/styles.css.map */

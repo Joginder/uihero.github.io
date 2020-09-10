@@ -1,0 +1,22 @@
+uuid: cbae1682-c5f9-4c88-a2e3-5e90c38af2e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - uihero
+_core:
+  default_config_hash: r2vnPEwFgKBIqOwt-XhOwWNVhuC-6vIRhb4BcAkv2eE
+id: uihero_messages
+theme: uihero
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
