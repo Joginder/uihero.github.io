@@ -1,0 +1,41 @@
+uuid: f6b60188-d3dd-434a-b5a5-eb6dc430927b
+langcode: en
+status: true
+dependencies:
+  module:
+    - better_social_sharing_buttons
+  theme:
+    - uihero
+id: bettersocialsharingbuttons
+theme: uihero
+region: footer
+weight: 0
+provider: null
+plugin: social_sharing_buttons_block
+settings:
+  id: social_sharing_buttons_block
+  label: 'Better Social Sharing Buttons'
+  provider: better_social_sharing_buttons
+  label_display: '0'
+  services:
+    facebook: facebook
+    twitter: twitter
+    pinterest: pinterest
+    linkedin: linkedin
+    whatsapp: 0
+    facebook_messenger: 0
+    email: 0
+    digg: 0
+    stumbleupon: 0
+    slashdot: 0
+    tumblr: 0
+    reddit: 0
+    evernote: 0
+    print: 0
+    copy: 0
+  iconset: social-icons--no-color
+  facebook_app_id: ''
+  print_css: ''
+  width: 40px
+  radius: 3px
+visibility: {  }

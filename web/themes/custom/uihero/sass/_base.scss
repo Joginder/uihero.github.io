@@ -1,11 +1,33 @@
 
 body,
-h1 {
+h1,
+h3 {
   font-family: $body-font-family;
   font-weight: 300;
+}
+
+h3 {
+  color: $h3-color;
+  font-weight: 400;
+}
+
+h1,
+h3 {
+  @media screen and (max-width: $max-md) {
+    font-size: $title-size - .75rem;
+  }
+  font-size: $title-size;
 }
 
 img {
   height: auto;
   max-width: 100%;
+}
+
+.no-sidebars {
+  .container {
+    @media screen and (min-width: $md) {
+      width: 1460px;
+    }
+  }
 }

@@ -9,6 +9,8 @@ $font-size: 16px !default;
 
 $body-font-family: $font-family !default;
 
+$title-size: 2.625rem;
+
 // colors
 $color-text-dark: #000 !default;
 $color-text-light: #FFF !default;
@@ -16,6 +18,7 @@ $hbg: #323a45 !default;
 $nav-active: #ff4b5a !default;
 $dots: #23282f !default;
 $dots-active: #6d7d92 !default;
+$h3-color: #444e5d !default;
 
 
 // layout
@@ -45,7 +48,7 @@ $max-xl: $xl - 1px;
 // Extend for Container max width set.
 %max-width {
   margin: 0 auto;
-  max-width: 1500px;
+  max-width: 1460px;
 }
 
 // extend for display none;

@@ -1,0 +1,21 @@
+uuid: 12eb924f-526d-4ef2-8861-b504fdae589c
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - uihero
+id: searchform_2
+theme: uihero
+region: drawer
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

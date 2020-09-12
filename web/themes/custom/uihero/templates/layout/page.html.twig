@@ -46,17 +46,32 @@
 <div id="page" class="layout-container">
 
   <div id="navbar">
+    <div class="navbar-item">
+      <div id="navbar-menu-toggle">
+        <a href="#">
+          <i class="material-icons navbar-icon">menu</i>
+        </a>
+      </div>
+    </div>
     {{ page.navbar }}
-    {# <!--
-    {{ page.primary_menu }}
-    {{ page.secondary_menu }}
-    --> #}
+    <!--
+    		    {{ page.primary_menu }}
+    		    {{ page.secondary_menu }}
+    		    -->
   </div>
 
-  {# <div id="drawer-overlay"></div>
+  <div id="drawer-overlay"></div>
   <div id="drawer">
+    <div class="drawer-item divider-bottom">
+      <div id="drawer-menu-close">
+        <a href="#">
+          <i class="material-icons drawer-icon">arrow_back</i>
+        </a>
+      </div>
+      <div id="drawer-title">Main menu</div>
+    </div>
     {{ page.drawer }}
-  </div> #}
+  </div>
 
   <header id="header" role="banner">
     <div id="header-content">
@@ -81,7 +96,9 @@
     {% endif %}
 
     <main role="main" id="main" class="container">
-      <div id="main-content" tabindex="-1">{# link is in html.html.twig #}
+      <div
+        id="main-content" tabindex="-1">
+        {# link is in html.html.twig #}
 
         <div class="card-holder">
           {{ page.breadcrumb }}
@@ -90,16 +107,19 @@
 
           <div class="layout-content">
             {{ page.content }}
-          </div>{# /.layout-content #}
+          </div>
+          {# /.layout-content #}
 
-        </div>{# /.card-holder #}
+        </div>
+        {# /.card-holder #}
 
         {% if page.content_secondary %}
           <div id="content-secondary">
             {{ page.content_secondary }}
           </div>
         {% endif %}
-      </div>{# /#main-content #}
+      </div>
+      {# /#main-content #}
 
       {% if page.sidebar_first %}
         <aside id="sidebar-first" class="sidebar layout-sidebar-first" role="complementary">
@@ -113,7 +133,8 @@
         </aside>
       {% endif %}
 
-    </main>{# /#main #}
+    </main>
+    {# /#main #}
 
     {% if page.after_main %}
       <div id="after-main">
@@ -121,7 +142,8 @@
       </div>
     {% endif %}
 
-  </div>{# /.content #}
+  </div>
+  {# /.content #}
 
   <footer id="footer" role="contentinfo">
     {{ page.footer }}
@@ -130,4 +152,5 @@
     </div>
   </footer>
 
-</div>{# /.layout-container #}
+</div>
+{# /.layout-container #}

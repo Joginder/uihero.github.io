@@ -5,7 +5,14 @@
       dots: true,
       infinite: true,
       speed: 1000,
-      responsive: []
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false
+          }
+        }
+      ]
     });
 
     $('.search-block-form label').on('click', function() {

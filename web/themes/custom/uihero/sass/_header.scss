@@ -5,16 +5,27 @@
   height: auto;
 }
 
+#block-sitebranding {
+  @media screen and (min-width: $max-md) {
+    width: auto;
+  }
+  width: 100%;
+}
+
 .region-navbar {
   @extend %max-width;
-
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
 
   nav {
+    @extend %none;
+
+    @media screen and (min-width: $max-md) {
+      display: block;
+    }
+
     align-self: center;
-    margin-right: 40px;
 
     .menu {
       display: flex;
@@ -69,11 +80,24 @@
   }
 
   .navbar-logo {
+    @media screen and (min-width: $max-md) {
+      text-align: left;
+    }
+
+    text-align: center;
+
     img,
     a {
       height: auto;
     }
   }
+}
+
+.navbar-item {
+  @media screen and (min-width: $max-md) {
+    display: none;
+  }
+  display: block;
 }
 
 #header {
@@ -84,6 +108,10 @@
 
 // search form
 .search-block-form {
+  @media screen and (min-width: $max-md) {
+    display: block;
+  }
+  display: none;
   margin-top: .8rem;
   width: 10rem;
 
@@ -93,6 +121,7 @@
 
   .form-type-search {
     display: flex;
+    position: relative;
 
     &::before {
       order: 3;
@@ -112,7 +141,7 @@
         display: block;
         height: 20px;
         width: 20px;
-        top: 26px;
+        top: 9px;
       }
     }
   }
@@ -134,9 +163,46 @@
     height: 20px;
     order: 2;
     right: 15px;
-    top: 25px;
+    top: 8px;
     visibility: visible;
     width: 20px;
+  }
+}
+
+.region-drawer {
+  .search-block-form {
+    @media screen and (min-width: $max-md) {
+      display: none;
+    }
+    display: block;
+    width: initial;
+
+    input[type='search'] {
+      color: $color-text-dark;
+      transition: all .5s;
+      width: 0;
+
+      &::placeholder {
+        color: $color-text-dark !important; //added to override base css code.
+      }
+    }
+
+    .form-type-search {
+      transition: all .5s;
+      width: 3rem;
+      &.open {
+        width: 15rem;
+
+        &::before {
+          background: url('../images/closeblack.svg') 0 0 no-repeat;
+          content: '';
+          display: block;
+          height: 20px;
+          top: 9px;
+          width: 20px;
+        }
+      }
+    }
   }
 }
 
