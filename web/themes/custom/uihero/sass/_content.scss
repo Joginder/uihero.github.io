@@ -1,7 +1,8 @@
 // Background image on top.
 .top-wrapper {
-  background: url('../images/bg.jpg') 0 0 no-repeat;
+  background: url("../images/bg.jpg") 0 0 no-repeat;
   background-size: cover;
+  margin-bottom: 4rem;
 }
 
 // Home page carousel
@@ -76,10 +77,10 @@
     }
 
     &::after {
-      background: url('../images/left.svg') 0 0 no-repeat;
+      background: url("../images/left.svg") 0 0 no-repeat;
       background-size: 100%;
       border: 1px solid $color-text-light;
-      content: '';
+      content: "";
       display: block;
       height: 4rem;
       width: 4rem;
@@ -94,10 +95,10 @@
     }
 
     &::after {
-      background: url('../images/right.svg') 0 0 no-repeat;
+      background: url("../images/right.svg") 0 0 no-repeat;
       background-size: 100%;
       border: 1px solid $color-text-light;
-      content: '';
+      content: "";
       display: block;
       height: 4rem;
       width: 4rem;
@@ -105,7 +106,7 @@
   }
 
   .slick-disabled {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   .slick-dots {
@@ -130,34 +131,35 @@
   }
 }
 
-
-.views-row {
-  &:nth-child(even) {
-    .hcontent {
-      @media screen and (max-width: $max-md) {
-        align-items: center;
-        flex-flow: column;
-      }
-      flex-flow: row-reverse;
-    }
-
-    .himage {
-      margin-left: 1.5rem;
-      margin-right: 0;
-    }
-  }
-}
-
 .hcontent {
   @media screen and (max-width: $max-md) {
     align-items: center;
     flex-flow: column;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   display: flex;
-}
+  margin-bottom: 2rem;
 
-.himage {
-  margin-right: 1.5rem;
+  &.left {
+    .himage {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &.right {
+    @media screen and (max-width: $max-md) {
+      align-items: center;
+      flex-flow: column;
+    }
+
+    flex-flow: row-reverse;
+
+    .himage {
+      margin-left: 1.5rem;
+    }
+  }
 }
 
 .hdsc {
